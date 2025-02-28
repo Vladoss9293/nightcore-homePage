@@ -1,0 +1,61 @@
+.presentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0247FE;
+}
+
+.presentation__about_project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.layout__container--1250 {
+    width: 1250px;
+    display: flex;
+    justify-content: center;
+}
+
+.about_project__title {
+    width: 600px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+.about_project__description {
+    margin-top: 30px;
+    width: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+    text-align: center;
+}
+
+.about_project__panel {
+    margin-top: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.514);
+    padding: 10px 40px;
+    transition: background-color 500ms ease;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.61);
+    }
+}
+
+.about_project__button_text {
+    color: white;
+    font-size: 18px;
+}
+
+.presentation_about__presentation_panel__img {
+    margin-top: 50px;
+    width: 70%;
+    border-radius: 15px 15px 0px 0px;
+}

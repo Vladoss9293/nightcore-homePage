@@ -12,12 +12,6 @@
     margin-top: 75px;
 }
 
-.layout__container--1250 {
-    width: 1250px;
-    display: flex;
-    justify-content: center;
-}
-
 .about_project__title {
     width: 600px;
     text-align: center;
@@ -36,17 +30,22 @@
 }
 
 .about_project__panel {
-    margin-top: 25px;
+    margin-top: 46px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.514);
-    padding: 10px 40px;
+    padding: 15px 45px;
     transition: background-color 500ms ease;
 
     &:hover {
         background-color: rgba(255, 255, 255, 0.61);
     }
+}
+
+.header__controls {
+    display: flex;
+    gap: 10px;
 }
 
 .about_project__button_text {
@@ -58,4 +57,46 @@
     margin-top: 50px;
     width: 70%;
     border-radius: 15px 15px 0px 0px;
+    z-index: 2;
+}
+
+
+.presentation__image_container {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .about_project__title {
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .about_project__title {
+        width: 300px;
+        font-size: 20px;
+        flex-wrap: wrap;
+    }
+    .about_project__description {
+        width: 100px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about_project__description {
+        width: 300px;
+    }
+}
+
+@media (max-width: 473px) {
+    .about_project__description {
+        font-size: 14px;
+    }
+    .about_project__title {
+        font-size: 25px;
+    }
 }

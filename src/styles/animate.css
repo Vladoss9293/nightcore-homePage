@@ -1,0 +1,41 @@
+.animate-rotate {
+  transition: transform 1s ease;
+}
+
+.animate-rotate:hover {
+  transform: rotate(315deg);
+}
+
+@keyframes hit-animate {
+    0% { transform: scale(1) translate(0, 0) rotate(0deg); }
+    80% { transform: scale(0.8) translate(10px, -10px) rotate(45deg); filter: drop-shadow(0 0 5px rgb(255, 255, 255)); }
+    82% { transform: scale(1) translate(2px, 0) rotate(0deg); }
+    83% { transform: scale(1) translate(-2px, 0) rotate(0deg); }
+    84% { transform: scale(1) translate(2px, 0) rotate(0deg); }
+    85% { transform: scale(1) translate(-1px, 0) rotate(0deg); }
+    86% { transform: scale(1) translate(1px, 0) rotate(0deg); }
+    88% { transform: scale(1) translate(-0.5px, 0) rotate(0deg); }
+    89% { transform: scale(1) translate(0.5px, 0) rotate(0deg); }
+    90% { transform: scale(1) translate(0.5px, 0) rotate(0deg); }
+    100% { transform: scale(1) translate(0, 0) rotate(0deg); filter: drop-shadow(0 0 0px rgb(255, 255, 255)); }
+}
+
+.animate-hit:hover {
+    animation: hit-animate 3s ease;
+}
+
+@keyframes heart-animate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate-heart:hover {
+    animation: heart-animate 500ms ease infinite;
+}

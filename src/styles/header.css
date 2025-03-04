@@ -1,8 +1,21 @@
 header {
     display: flex;
-    justify-content: center;
-    background-color: #0247FE;
+    position: static;
+    z-index: 5;
+    justify-content: center;    
+    background-color: #0245fe;
     height: 90px;
+}
+
+header.active {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+    height: 90px;
+    background-color: #1b57ffda;
 }
 
 .header__content {
@@ -10,7 +23,6 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 10px;
-    background-color: #0247FE;
     height: 100%;
     width: 1500px;
 }

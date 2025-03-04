@@ -1,3 +1,7 @@
 import { menuToggle } from "./menu-toggle";
+import { handleHeader } from "../components/header";
 
-menuToggle();
+document.addEventListener('DOMContentLoaded', () => {
+    menuToggle();
+    handleHeader();
+})
